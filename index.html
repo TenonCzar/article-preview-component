@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-white flex flex-col h-screen gap-4 justify-center font-manrope"
+  >
+    <div class="md:flex flex-shrink p-10 md:h-[400px] justify-center relative">
+      <img
+        src="images/drawers.jpg"
+        class="rounded-t-2xl md:top-0 md:left-40 md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none md:w-[30%] shadow-lg"
+        alt="Drawer Funiture"
+      />
+      <div
+        class="note flex flex-col gap-4 rounded-b-2xl bg-white pt-8 pb-6 px-[28px] md:rounded-bl-none md:rounded-tr-2xl shadow-lg md:w-[40%] md:gap-8 md:relative md:-left-20"
+      >
+        <h2
+          class="font-bold text-[15px] text-VeryDarkGrayishBlue lg:text-[20px] md:font-semibold"
+        >
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h2>
+
+        <p class="writeup text-[12px] text-DesaturatedDarkBlue lg:text-lg">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+
+        <div class="profile flex gap-8 justify-between items-center">
+          <div class="flex gap-4 items-center">
+            <img
+              src="images/avatar-michelle.jpg"
+              class="rounded-full w-[20%]"
+              alt="Michelle"
+            />
+            <p class="person">
+              <span class="text-VeryDarkGrayishBlue font-semibold"
+                >Michelle Appleton</span
+              >
+              <br />28 Jun 2020
+            </p>
+          </div>
+
+          <button
+            class="share-btn flex bg-LightGrayishBlue rounded-full p- w-[40px] h-[40px] md:w-[3.5rem] md:h-[3.5rem] justify-center items-center"
+          >
+            <img src="images/icon-share.svg" class="w-[50%]" alt="Share Post" />
+          </button>
+        </div>
+      </div>
+      <div
+        class="share-to hidden flex gap-4 items-center justify-between p-5 bg-VeryDarkGrayishBlue text-GrayishBlue rounded-b-xl md:p-6 md:w-fit md:h-fit md:absolute md:right-[17%] md:rounded-xl md:top-[40%]"
+      >
+        <div
+          class="hidden angle md:flex md:absolute md:w-6 md:h-6 bg-VeryDarkGrayishBlue top-14 md:left-28 md:rotate-45"
+        ></div>
+        <p>S H A R E</p>
+        <div class="socials flex justify-between gap-8 p-4 md:p-0 w-[50%]">
+          <a href="https://facebook.com/iamphilipsam"
+            ><img
+              src="images/icon-facebook.svg"
+              alt="facebook share"
+              class="facebook"
+          /></a>
+          <a href="https://x.com/tenonczar"
+            ><img
+              src="images/icon-twitter.svg"
+              alt="twitter share"
+              class="twitter"
+          /></a>
+          <a href="https://pinterest.com/tenonczar"
+            ><img
+              src="images/icon-pinterest.svg"
+              alt="pinterest share"
+              class="pinterest"
+          /></a>
+        </div>
+        <button
+          class="close-share flex justify-center items-center bg-DesaturatedDarkBlue rounded-full p-2 w-[40px] h-[40px] md:hidden"
+        >
+          <img
+            src="images/icon-share.svg"
+            class="filter brightness-0 invert invert-1 w-[50%]"
+            alt="Share Post"
+          />
+        </button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/tenonczar">Philip Sam</a>.
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
